@@ -1,0 +1,6 @@
+{
+    "layout": "base.njk",
+    "collection": "posts",
+    "tags": "posts",
+    "permalink":  "/{{ page.fileSlug | shorten ) }}/index.html"
+  }

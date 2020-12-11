@@ -3,3 +3,18 @@
 @tailwind components;
 
 @tailwind utilities;
+body{
+    --grad1: #002239;
+    --grad2: #0b605f;
+    --grad3: #58adac;
+    --grad-img: linear-gradient(119deg,var(--grad1) 2%,var(--grad2) 82%);
+    --stripe: hsla(0,0%,100%,0.06667);
+    /* //background: #2d1058; */
+    background:#002239 var(--grad-img) no-repeat;
+}
+.prose a.btn, .btn{
+    @apply rounded-md py-3 px-4 uppercase text-xs cursor-pointer tracking-wider bg-purple-900 text-white no-underline hover:bg-purple-500;
+}
+.prose pre, :not(pre) > code[class*="language-"], pre[class*="language-"]{
+    background-color: rgba(55,65,81,var(--tw-bg-opacity)) !important;
+}
