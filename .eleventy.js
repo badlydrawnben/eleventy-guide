@@ -4,15 +4,6 @@ let markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addCollection("basics", function(collectionApi) {
-    return collectionApi.getFilteredByTag("basics");
-  });
-  eleventyConfig.addCollection("functionality", function(collectionApi) {
-    return collectionApi.getFilteredByTag("functionality");
-  });
-  eleventyConfig.addCollection("extending", function(collectionApi) {
-    return collectionApi.getFilteredByTag("extending");
-  });
 
   eleventyConfig.addPlugin(syntaxHighlight);
   // https://franknoirot.co/posts/external-links-markdown-plugin/
