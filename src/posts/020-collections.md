@@ -15,6 +15,8 @@ So this site for example is a nice and simple one. Each of these pages is a 'pos
 
 I don't need to register any of these collections in the `.eleventy.js` file because they're all in the `/posts` folder - so Eleventy automatically creates a `posts` collection, and it also creates a collection for each of my tags.
 
+Set them in posts.json file so don't need to tag them as post
+
 ## Registering your own collection
 
 There are plenty situations in which you might want to group certain bits of data together whereby using FrontMatter tags isn't feasible or sensible.
