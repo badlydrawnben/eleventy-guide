@@ -45,6 +45,22 @@ config.addFilter("min", (...numbers) => {
 
 then make sure that you change that first bit to `eleventyConfig.` (if your project is using the default setup).
 
+## Adding Passthrough files
+One of the other required elements in the `.eleventy.js` file is the `addPassThroughCopy` function.
+
+```js
+  eleventyConfig.addPassthroughCopy('./src/css/styles.css');
+  eleventyConfig.addPassthroughCopy('./src/img');
+ ``` 
+
+Without this setup properly, it's likely your site won't work. When Eleventy builds your site it takes your data (your .md and .njk and .json files etc), processes it and puts it in the output folder. That output folder is otherwise empty.
+
+If there are any CSS, front-end JS or image files in your source folder and they aren't being touched by the build process, then they won't be copied across to your distribution/public folder.
+
+The `addPassThroughCopy` function is basically saying 'these files (or folders) should be part of the compiled/built distribution. Add a copy of them to the distribution folder - allowing them to pass through the build process'.
+
+If your localhost version of the site doesn't look right, then it might well be because the CSS file hasn't been passed through to the distribution folder and is therefore throwing a 404 error in the browser console.
+
 ## The order of the file contents matters
 
 In your code editor, double check that your opening and closing curly brackets are paired up properly. It's really easy to miss one out or keep a superfluous one in if you're copying and pasting from somewhere else.
