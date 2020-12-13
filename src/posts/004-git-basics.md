@@ -80,10 +80,10 @@ When you've made some changes to files, or created new ones, you'll see a little
 
 When you want to update your remote branch (it's up to you whether to want to do this little and often or just in one big set when you're finished the whole thing) then if you click on the little git icon on the left hand side it will show you all of the files that have been changed since the last commit.
 
-Write a title for the commit that you're doing:
+Write a title for the commit that you're doing and then press the tick button to create a commit:
 ![name your commit](https://p67.p3.n0.cdn.getcloudapp.com/items/2Nu0qKYQ/Screenshot%202020-12-13%20at%2007.40.46.png?v=a2b51aa035f0ccd98248b0549746f840)
 
-From the little dots menu, select 'Push':
+From the little dots menu, select 'Push'. This will push all the commits made since the last push.:
 ![VS code push to remote](https://p67.p3.n0.cdn.getcloudapp.com/items/YEuQZl8B/Screenshot%202020-12-13%20at%2008.29.12.png?v=a28d1783c10c57dd4a89bdb2995e6c48)
 
 Give it a minute, then if you look in your Github repo you will see those changes along with your commit title:
