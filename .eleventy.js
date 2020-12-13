@@ -33,6 +33,26 @@ module.exports = function(eleventyConfig) {
     return str.slice(4);
 });
 
+ //alphabetical order for EU countries
+ eleventyConfig.addFilter("countryAlpha", (arr) => {
+  arr.sort((a, b) => (a.country) > (b.country) ? 1 : -1);
+   return arr;
+ });
+
+ //filter countries that use the Euro
+ eleventyConfig.addFilter("euroCountry", (arr) => {
+   return arr.filter((d) => (d.currency) == 'Euro') ;
+  });
+  
+ //alphabetical order for EU capitals
+ eleventyConfig.addFilter("capitalAlpha", (arr) => {
+  arr.sort((a, b) => (a.capital) > (b.capital) ? 1 : -1);
+   return arr;
+ });
+
+  
+   
+
   
   eleventyConfig.addPassthroughCopy('./src/css/styles.css');
   eleventyConfig.addPassthroughCopy('./src/img');

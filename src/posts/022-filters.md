@@ -31,7 +31,7 @@ So I've created a filter called `sortorder` and I'm ordering them in ascending o
 This filter is then available to my Nunjucks files. So I can 'pipe' it in to the loop of my posts:
 
 ```js
-{% for post in collections[item.id] | sortorder %} 
+{%raw%}{% for post in collections[item.id] | sortorder %} {%endraw%}
 ```
 
 In this case, I wanted the collections to be broken up into sections (Basics, Functionality and Extending) so I'm using tags to do that. See the Nunjucks page.

@@ -1,0 +1,302 @@
+{
+"results" : [
+
+  {
+    "objectId": "4LR9T2j7LB",
+    "country": "Austria",
+    "capital": "Vienna",
+    "official_EU_language": "German",
+    "yearOfEntry": "01/01/1995",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "HACYD9dKm4",
+    "country": "Croatia",
+    "capital": "Zagreb",
+    "official_EU_language": "Croatian",
+    "yearOfEntry": "01/07/2013",
+    "currency": "Croatian Kuna",
+    "currencySymbol": "Kn",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "URlJ9aQsjX",
+    "country": "Cyprus",
+    "capital": "Nicosia",
+    "official_EU_language": "Greek",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "7E7KECfUdH",
+    "country": "Bulgaria",
+    "capital": "Sofia",
+    "official_EU_language": "Bulgarian",
+    "yearOfEntry": "01/01/2007",
+    "currency": "Bulgarian Lev",
+    "currencySymbol": "лв",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "BRZIqpMtRR",
+    "country": "Belgium",
+    "capital": "Brussels",
+    "official_EU_language": "Dutch, French and German",
+    "yearOfEntry": "01/01/1958",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "WvIgQS44UC",
+    "country": "Denmark",
+    "capital": "Copenhagen",
+    "official_EU_language": "Danish",
+    "yearOfEntry": "01/01/1973",
+    "currency": "Danish Krone",
+    "currencySymbol": "kr",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "5ihEurdi6W",
+    "country": "Estonia",
+    "capital": "Tallinn",
+    "official_EU_language": "Estonian",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "8iAbJ2CXst",
+    "country": "Czechia",
+    "capital": "Prague",
+    "official_EU_language": "Czech",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Czech Koruna",
+    "currencySymbol": "Kč",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "HTO1h5iq60",
+    "country": "Germany",
+    "capital": "Berlin",
+    "official_EU_language": "German",
+    "yearOfEntry": "01/01/1958",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "KfjihXDTjm",
+    "country": "Hungary",
+    "capital": "Budapest",
+    "official_EU_language": "Hungarian",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Hungarian Forint",
+    "currencySymbol": "Ft",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "VmpM2szHk1",
+    "country": "France",
+    "capital": "Paris",
+    "official_EU_language": "French",
+    "yearOfEntry": "01/01/1958",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "Z4MADgP5Su",
+    "country": "Greece",
+    "capital": "Athens",
+    "official_EU_language": "Greek",
+    "yearOfEntry": "01/01/1981",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "vFIqnRFg4o",
+    "country": "Finland",
+    "capital": "Helsinki",
+    "official_EU_language": "Finnish, Swedish",
+    "yearOfEntry": "01/01/1995",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "oOTz0lqucq",
+    "country": "Italy",
+    "capital": "Rome",
+    "official_EU_language": "Italian",
+    "yearOfEntry": "01/01/1958",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "sPEhaxS7yz",
+    "country": "Latvia",
+    "capital": "Riga",
+    "official_EU_language": "Latvian",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "bMic3kaQvg",
+    "country": "Lithuania",
+    "capital": "Vilnius",
+    "official_EU_language": "Lithuanian",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "LdD3t5DJoi",
+    "country": "Ireland",
+    "capital": "Dublin",
+    "official_EU_language": "Irish, English",
+    "yearOfEntry": "01/01/1973",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "0t1JfERXHm",
+    "country": "Netherlands",
+    "capital": "Amsterdam",
+    "official_EU_language": "Dutch",
+    "yearOfEntry": "01/01/1958",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "2rUYMvQfet",
+    "country": "Malta",
+    "capital": "Valletta",
+    "official_EU_language": "Maltese, English",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "LjwW72L6yC",
+    "country": "Poland",
+    "capital": "Warsaw",
+    "official_EU_language": "Polish",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Polish Zloty",
+    "currencySymbol": "zł",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "gpRhERp1Ck",
+    "country": "Luxembourg",
+    "capital": "Luxembourg",
+    "official_EU_language": "French, German",
+    "yearOfEntry": "01/01/1958",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "GO1LsAuN5V",
+    "country": "Slovakia",
+    "capital": "Bratislava",
+    "official_EU_language": "Slovak",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "I7KShbv2yL",
+    "country": "Slovenia",
+    "capital": "Ljubljana",
+    "official_EU_language": "Slovenian",
+    "yearOfEntry": "01/05/2004",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "ByKoJD0TAQ",
+    "country": "Sweden",
+    "capital": "Stockholm",
+    "official_EU_language": "Swedish",
+    "yearOfEntry": "01/01/1995",
+    "currency": "Swedish Krona",
+    "currencySymbol": "kr",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "KNYFbEgwqB",
+    "country": "Portugal",
+    "capital": "Lisbon",
+    "official_EU_language": "Portuguese",
+    "yearOfEntry": "01/01/1986",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "6MRsrFmWLm",
+    "country": "Spain",
+    "capital": "Madrid",
+    "official_EU_language": "Spanish",
+    "yearOfEntry": "01/01/1986",
+    "currency": "Euro",
+    "currencySymbol": "€",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  },
+  {
+    "objectId": "deTkBiC7jx",
+    "country": "Romania",
+    "capital": "Bucharest",
+    "official_EU_language": "Romanian",
+    "yearOfEntry": "01/01/2007",
+    "currency": "Romanian Leu",
+    "currencySymbol": "L",
+    "createdAt": "2020-11-27T17:02:54.192Z",
+    "updatedAt": "2020-11-27T17:02:54.192Z"
+  }
+]
+}
