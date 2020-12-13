@@ -55,9 +55,9 @@ One of the other required elements in the `.eleventy.js` file is the `addPassThr
 
 Without this setup properly, it's likely your site won't work. When Eleventy builds your site it takes your data (your .md and .njk and .json files etc), processes it and puts it in the output folder. That output folder is otherwise empty.
 
-If there are any CSS, front-end JS or image files in your source folder and they aren't being touched by the build process, then they won't be copied across to your distribution/public folder.
+If there are any CSS, front-end JS or image files in your source folder and they aren't being touched by the build process, then they won't end up in your distribution/public folder.
 
-The `addPassThroughCopy` function is basically saying 'these files (or folders) should be part of the compiled/built distribution. Add a copy of them to the distribution folder - allowing them to pass through the build process'.
+The `addPassThroughCopy` function is basically saying 'these files (or folders) should be part of the compiled/built distribution files. Add a copy of them to the distribution folder - allowing them to pass through the build process'.
 
 If your localhost version of the site doesn't look right, then it might well be because the CSS file hasn't been passed through to the distribution folder and is therefore throwing a 404 error in the browser console.
 
@@ -79,7 +79,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  // all other eleventy Config functions
+  // all other eleventy Config functions inc passThrough ones
 
   return {
     dir: { input: 'src', output: '_site', includes: 'includes', data: 'data' },
