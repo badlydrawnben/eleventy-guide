@@ -2,6 +2,13 @@
 title: APIs and external data sources
 tags: 
  - functionality
+furtherReading:
+ - linkTitle: This video from Phil Hawksworth has a great walkthrough about pulling data from an API (jump to the 1hr 25 min mark)
+   linkUrl: https://www.freecodecamp.org/news/jamstack-full-course/ 
+ - linkTitle: Getting Eleventy to pull data from Airtable looks like a client-friendly workflow for some projects
+   linkUrl: https://github.com/plloyd11/eat
+ - linkTitle: Read more about axios here
+   linkUrl: https://www.sitepoint.com/add-office-functionality-to-your-web-app-with-onlyoffice/
 ---
 
 The variety of types of data that Eleventy can work with is one of the things that developers like about it.
@@ -167,7 +174,7 @@ Now that we've got our basic loop and we know how to reference the data inside E
 
 Normally you'd associate pagination with determining how many blog posts to show on each page, but the Eleventy pagination system can also be used to take our data set and split it up into individual pages.
 
-Inside our `films` directory let's create a new file called `index.njk`
+Inside our `films` directory let's create a new file called `index.njk`. This is an example of a [Template Directory Data file](/directory-data-files)
 
 The FrontMatter for it will look like this:
 
@@ -211,39 +218,13 @@ It's a bit of a mess as I used that site for experimenting with all sorts of oth
 
 ## Hiding API keys
 
-# Caching API requests
+## Caching API requests
 
 ## Wrapping up
 
 I hope this has given just a small glimpse into the possibilities of pulling external data into Eleventy.
 
-In this case it's a really simple API that isn't updated, so once built, the data won't go out of date. If you want to pull in data like the news or weather then you may well want the site to automatically rebuild itself a few times a day. See the bottom of the Static Site Generators page for more info about that.
+In this case it's a really simple API that isn't updated, so once built, the data won't go out of date. If you want to pull in data like the news or weather then you may well want the site to automatically rebuild itself a few times a day. See the bottom of the [Static Site Generators](/intro-ssg) page for more info about that.
 
 
-
-
-
-See environment variables for hiding an API key in source
-Oauth2 - too tricky
-
-
-
-StarWars API - film feed (out of date)
-Play with it in POstwoman  / Hoppscotch >results array Download Postman. We need title and opening_crawl
-Need axiom
-Promise and async
-
-Homepage - loop through and list the film titles - easiest thing first. Don't link them yet
-
-films.njk in films folder. COmplicated bit. Pagination can also break the records into individual pages. Permanlink thing but tricky
-
-Copy the permalink to the home loop. Not a collection as such so can't access fileSlug
-
-Copy and paste the title sequence CSS from somewhere on Google. bCeause, Star Wars.
-
-API data can be a lot of fun, build interesting stuff with it. 
-
-Phil Hawkesworth video
-Like that its this easy o throw sites up. Look at Github but just the relevenat files.
-Environment variables
 

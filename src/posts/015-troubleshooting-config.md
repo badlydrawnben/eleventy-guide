@@ -6,7 +6,7 @@ tags:
 
 The `.eleventy.js` file is one of the most important in any Eleventy project and it's likely that you'll need to tweak it during yours. Although these might seem obvious, here are a few things that can go wrong if you're copying and pasting code in without fully understanding the format of the file.
 
-## Requiring your additional modules at the beginning
+## Requiring your additional modules 
 
 At the top of the `.eleventy.js` file you list all the additional modules that your project requires. For example:
 
@@ -64,7 +64,7 @@ If your localhost version of the site doesn't look right, then it might well be 
 
 In your code editor, double check that your opening and closing curly brackets are paired up properly. It's really easy to miss one out or keep a superfluous one in if you're copying and pasting from somewhere else.
 
-1. All the `const` required modules go at the top of the file - that's quite straightforward. 
+1. Many developers put all the `const` required modules at the top of the file - though you can define these variables before each corresponding config function if you like 
 2. All the config functions need to go inside the curly brackets of the `module.exports` function.
 3. Then at the end of the function you `return` the directories, templareFormats etc.
 

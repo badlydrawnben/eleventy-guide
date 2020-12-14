@@ -10,9 +10,12 @@ There's plenty git tutorials out there but here we'll skip all the stuff about b
 
 ## Some basic git terminology and workflow
 
+### What is git?
+Git is a *version control system*. It allows you to track and rollback changes to your code, and can allow multiple people to work on the same codebase at the same time.
+
 ### Local and remote repositories
 
-In a nutshell, the whole idea of github is that you have a version of the code on your computer (the local version) and you are syncing that with a version in your Github account (the remote version).
+In a nutshell, the whole idea of github is that you have a version of the code on your computer (the local version) and you are syncing that with a version in your Github account (the remote version). 
 
 ### Commits
 

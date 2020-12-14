@@ -14,18 +14,18 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   </head>
   <body>
-  <div class="sm">
-  <div class="sm__container">
-    <div class="sm__stripes sm__stripes--a"></div>
-    <div class="sm__stripes sm__stripes--b"></div>
-    <div class="sm__stripes sm__stripes--c"></div>
-    <div class="sm__stripes sm__stripes--d"></div>
+  <div class="bg_grid">
+  <div class="bg_grid__container">
+    <div class="bg_grid__stripes bg_grid__stripes--a"></div>
+    <div class="bg_grid__stripes bg_grid__stripes--b"></div>
+    <div class="bg_grid__stripes bg_grid__stripes--c"></div>
+   
   </div>
 </div>
   
   <div class="container w-full   flex mx-auto px-2 pt-8 lg:pt-16 mt-16 justify-center">
   <header class="lg:w-full">
-  <div class="w-full container text-center mx-auto mt-0 py-4 justify-center">
+  <div class="w-full container text-center mx-auto mt-0 py-4 justify-center relative">
   <{{ 'h1' if page.url == "/" else 'p' }} class="font-bold text-6xl text-white tracking-widest">Eleventy for Beginners</{{ 'h1' if page.url == "/" else 'p' }}>
   </div>
   </header>
@@ -39,14 +39,27 @@
   <h1 class="font-semibold text-4xl my-6">
   {{ title | safe }}
   </h1>  
+  <hr class="mb-8">
 </div>
   {% endif %}
 <div class="prose mx-auto">
       {{ content | safe }}
-      </div>
+</div>
+{# Output Further reading box if it exists in FrontMatter         #}
+{% if furtherReading %}
+<hr class="mt-8"/>
+<aside class="prose bg-primary p-6 text-gray-300 mx-auto rounded mt-8">
+<p class="text-sm uppercase text-center text-lg tracking-widest">-- Further reading --</p>
+<ul >
+{% for item in furtherReading %}
+<li><a href="{{item.linkUrl}}" target="_blank"><span class="text-gray-200">{{item.linkTitle}}</span></a></li>
+{% endfor %}
+</ul>
+</aside>
+{% endif %}
     </main>
     
-    <aside class="w-full lg:w-1/4 lg:px-6 leading-normal order-first bg-gray-700 text-white p-6">
+    <nav class="w-full lg:w-1/4 lg:px-6 leading-normal order-first bg-gray-700 bg-opacity-75 text-white p-6">
     {% set navGroups = [{ title: "The Basics", id: 'basics' }, { title: "Eleventy functionality", id: 'functionality'}, { title: "Extending Eleventy", id: 'extending' }] %}
 
        <ul class="list-reset">
@@ -65,7 +78,7 @@
     {% for post in collections[item.id] | sortorder %} 
     
       <li {% if page.url == post.url %} aria-current="page"{% endif %} class=" lg:hover:bg-transparent">
-                     <a href="{{ post.url }}" class="py-2 md:my-2 bg-gray-600 hover:bg-purple-100 block pl-4 align-middle text-gray-100 leading-4 no-underline hover:text-purple-500   {% if page.url == post.url %} bg-purple-900 text-white   {% endif %}">
+                     <a href="{{ post.url }}" class="py-2 md:my-2 bg-gray-600 hover:bg-purple-100 block pl-4 align-middle text-gray-100 leading-4 no-underline hover:text-purple-500   {% if page.url == post.url %} bg-primary text-white   {% endif %}">
                      <span class="pb-1 md:pb-0">{{ post.data.title }}</span>
                      </a>
                   </li>
@@ -75,7 +88,12 @@
 
 
     
-    </aside>
+    </nav>
     </div>
+     <footer class="w-full flex flex-wrap mx-auto p-4 bg-gray-700 bg-opacity-75 justify-center relative text-gray-100">
+     <div class="container text-center text-sm">
+     <p>Built with WordPress*  |  <a href="https://twitter.com/charitybiscuits" _target="_blank">Twitter</a>  |  <a href="https://github.com/badlydrawnben/eleventy-guide" _target="_blank">Github repo for this site</a>  |  Background stripes idea from <a href="https://www.londoncss.dev/" _target="_blank">London CSS</a>  |  *just kidding</p>
+     </div>
+     </footer>
   </body>
 </html>

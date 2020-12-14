@@ -2,6 +2,13 @@
 title: Filters
 tags: 
  - functionality
+furtherReading:
+ - linkTitle: Steph has some great examples of 11ty filters in her 11ty Rocks! site
+   linkUrl: https://11ty.rocks/eleventyjs/ 
+ - linkTitle: Here's some more filter examples including date formatting
+   linkUrl: https://rphunt.github.io/eleventy-walkthrough/filters.html#formatdate   
+ - linkTitle: The official 11ty docs on filters
+   linkUrl: https://www.11ty.dev/docs/filters/
 ---
 
 I hope your vanilla Javascript skills are better than mine! Filters are a good way of brushing up on what most developers would consider to be the basics.
@@ -60,9 +67,30 @@ And here it is in use in my `posts.json` file
     "permalink":  "/{%raw%}{{ page.fileSlug | shorten ) }}{%endraw%}/index.html"
   }
 ```
+## Built-in filters
+You'll see from the [Nunjucks page](/nunjucks) that it has its own built-in filters that you can access - like `reverse`. 
+Eleventy also has a few [built-in filters](https://www.11ty.dev/docs/filters/#eleventy-provided-universal-filters) like `url` and `get*CollectionItem`. The `log` one is handy for debugging. You can pipe it into a loop like this:
 
+```js
+{%raw%}{% for item in furtherReading | log %}{%endraw%}
+```
+Then if you look in your console you'll see that it prints them out:
 
-
-Link to Steph ones
+```js
+[
+  {
+    linkTitle: 'Steph has some great examples of 11ty filters in her 11ty Rocks! site',
+    linkUrl: 'https://11ty.rocks/eleventyjs/'
+  },
+  {
+    linkTitle: "Here's some more filter examples including date formatting",
+    linkUrl: 'https://rphunt.github.io/eleventy-walkthrough/filters.html#formatdate'
+  },
+  {
+    linkTitle: 'The official 11ty docs on filters',
+    linkUrl: 'https://www.11ty.dev/docs/filters/'
+  }
+]
+```
 
 

@@ -2,6 +2,9 @@
 title: Collections
 tags: 
  - functionality
+furtherReading:
+ - linkTitle: The official 11ty docs on Collections
+   linkUrl: https://www.11ty.dev/docs/collections/ 
 ---
 
 Collections in Eleventy are a way of bundling content together so that you can loop through them or pick a random one for example. In WordPress you might use Tags, Categories or Post Types as a way of grouping similar content together, and in Eleventy it's similar.
@@ -101,31 +104,12 @@ My Javascript is pretty awful so it always takes me a fair bit of effort (and Go
 
   ### Sorting with a filter
 
-  If you want the option of being able to sort your collection in a number of ways - you might want most recent posts first, but also be able to show the two most recent 'featured' posts for example, then separating the collection registration from the sorting is a good way to go.
+  If you want the option of being able to sort your collection in a number of ways - you might want most recent posts first, but also be able to show the two most recent 'featured' posts for example – then **separating the collection registration from the sorting is a good way to go**.
 
   This means you're not duplicating code by having to register separate `postList`, `featuredPostList` and `postListAlphabetical` collections for example.
 
   So register your collection (you don't need to if it's a simple one based on tags or folder). Then also create a separate filter which can be applied to any collection you like.
 
-  Check out the Filters page for how to go about it.
+  Check out the [Filters page](/filters) for how to go about registering your own filters.
   
-  Better in some circumstances if you want to sort the same collection in different ways - may want it most recent, or only 'featured' posts. Sometimes top to bottom, reverse it. Don't want to have to create separate collections each time.
-
-  You add the filter in config then use it as a Nunjucks pipe
-
-  Examples from this site
-  ordering by filename as easiest to add in and change rather than edit FrontMatter for each one. DOnt need to register it. Created the filter.
-
-See filters page for some examples.
-
-  plus see pagination filter - chop off the first 4 digits so permalinks look nicer.
-
-Explicit or implicit
-By tags, or location in folder, or loads of other things - some code examples
-
-Can order them when registering
-But another way is to have registering and filtering/ordering separate
-
-This example. Not rgeistering any collections in eleventy fiel. All by tag
-So all have post tag and then also have sections as well. Show loop.
 

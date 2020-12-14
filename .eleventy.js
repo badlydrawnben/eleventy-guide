@@ -50,6 +50,7 @@ module.exports = function(eleventyConfig) {
    return arr;
  });
 
+ 
   eleventyConfig.addPassthroughCopy('./src/css/styles.css');
   eleventyConfig.addPassthroughCopy('./src/img');
   return {
