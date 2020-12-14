@@ -14,6 +14,14 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   </head>
   <body>
+  <div class="sm">
+  <div class="sm__container">
+    <div class="sm__stripes sm__stripes--a"></div>
+    <div class="sm__stripes sm__stripes--b"></div>
+    <div class="sm__stripes sm__stripes--c"></div>
+    <div class="sm__stripes sm__stripes--d"></div>
+  </div>
+</div>
   
   <div class="container w-full   flex mx-auto px-2 pt-8 lg:pt-16 mt-16 justify-center">
   <header class="lg:w-full">
@@ -23,7 +31,7 @@
   </header>
   </div>
 
-  <div class="container w-full flex flex-wrap mx-auto px-2 my-6 justify-center">
+  <div class="container w-full flex flex-wrap mx-auto px-2 my-6 justify-center relative">
     <main class="w-full lg:w-3/4 p-8 pb-24 mt-6 lg:mt-0 bg-white border border-gray-400 border-rounded ">
   {# If this is the homepage we don'thave the h1 here as the top title uses h1 #}
   {% if page.url !== "/" %}

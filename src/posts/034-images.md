@@ -1,7 +1,6 @@
 ---
 title: Images
 tags: 
- - posts
  - functionality
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: Filters
 tags: 
- - posts
  - functionality
 ---
 
 I hope your vanilla Javascript skills are better than mine! Filters are a good way of brushing up on what most developers would consider to be the basics.
 
-If you've read the Collections page you'll know that filters are useful for sorting collections. There's many other uses for them as well – formatting dates, picking a set number of items, trimming content and much else besides.
+If you've read the [Collections](/collections) page you'll know that filters are useful for sorting collections. There's many other uses for them as well – formatting dates, picking a set number of items, trimming content and much else besides.
 
 If you pore over the `.eleventy.js` file for this site you'll see a couple of simple filters that I have added.
 
@@ -58,7 +57,7 @@ And here it is in use in my `posts.json` file
     "layout": "base.njk",
     "collection": "posts",
     "tags": "posts",
-    "permalink":  "/{{ page.fileSlug | shorten ) }}/index.html"
+    "permalink":  "/{%raw%}{{ page.fileSlug | shorten ) }}{%endraw%}/index.html"
   }
 ```
 

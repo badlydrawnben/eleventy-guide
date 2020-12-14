@@ -1,7 +1,6 @@
 ---
 title: How Static Site Generators (SSG) work
 tags: 
- - posts
  - basics
 ---
 

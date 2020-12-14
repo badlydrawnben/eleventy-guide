@@ -1,7 +1,6 @@
 ---
 title: Node.js basics
 tags: 
- - posts
  - basics
 ---
 

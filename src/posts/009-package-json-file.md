@@ -1,7 +1,6 @@
 ---
 title: The package.json file
 tags: 
- - posts
  - basics
 ---
 Make sure you've read the previous post about Node.js and npm first.

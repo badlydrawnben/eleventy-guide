@@ -1,7 +1,6 @@
 ---
 title: Markdown
 tags: 
- - posts
  - basics
 ---
 If the '**J**(avascript)' and the '**A**(PIs)' bits of the JAMstack can be tricky to get your head around, luckily the '**M**' is pretty straightforward. 

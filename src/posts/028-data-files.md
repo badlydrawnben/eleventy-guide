@@ -1,7 +1,6 @@
 ---
 title: Data files
 tags: 
- - posts
  - functionality
 templateEngineOverride: njk,md 
 ---

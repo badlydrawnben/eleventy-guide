@@ -91,3 +91,5 @@ If you look at the `base.njk` file [in this site's Github repo](https://github.c
 
 ## Nunjucks in code blocks
 In Eleventy markdown files, Nunjucks code seems to be executed even though it's inside a code block. That makes actually printing NUnjucks code onscreen a bit harder. See the Markdown page in this site for the best solution that I've come across.
+
+Square bracket notation for collections.variable

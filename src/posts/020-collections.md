@@ -1,7 +1,6 @@
 ---
 title: Collections
 tags: 
- - posts
  - functionality
 ---
 

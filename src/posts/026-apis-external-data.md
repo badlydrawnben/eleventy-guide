@@ -1,7 +1,6 @@
 ---
 title: APIs and external data sources
 tags: 
- - posts
  - functionality
 ---
 

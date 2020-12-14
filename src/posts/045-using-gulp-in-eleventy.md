@@ -1,5 +1,5 @@
 ---
 title: Incorporating Gulp
 tags: 
- - basics
+ - extending
 ---

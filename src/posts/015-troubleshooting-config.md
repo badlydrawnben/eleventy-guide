@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting the .eleventy.js file
 tags: 
- - posts
  - basics
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Learning Javascript
 tags: 
- - posts
  - basics
 ---
 ## Can you use Eleventy if you're crap at Javascript?
