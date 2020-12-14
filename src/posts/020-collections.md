@@ -5,6 +5,8 @@ tags:
 furtherReading:
  - linkTitle: The official 11ty docs on Collections
    linkUrl: https://www.11ty.dev/docs/collections/ 
+ - linkTitle: Working with collections - on Philip Borenstein's blog
+   linkUrl: https://www.pborenstein.com/posts/collections/ 
 ---
 
 Collections in Eleventy are a way of bundling content together so that you can loop through them or pick a random one for example. In WordPress you might use Tags, Categories or Post Types as a way of grouping similar content together, and in Eleventy it's similar.
@@ -15,9 +17,16 @@ Eleventy has a function for registering collections in the `.eleventy.js` file, 
 
 So this site for example is a nice and simple one. Each of these pages is a 'post' and in the FrontMatter I'm tagging each one to denote which category it belongs to (in the menu - `basics`, `functionality` and `extending`).
 
-I don't need to register any of these collections in the `.eleventy.js` file because they're all in the `/posts` folder - so Eleventy automatically creates a `posts` collection, and it also creates a collection for each of my tags.
+I don't need to register any of these collections in the `.eleventy.js` file because they are tags. And I don't need to use the tag of `posts` or register a `posts` collection manually (see next section) because the Data Template file:  `/posts/posts.json` folder is adding all of them to the `posts` collection:
 
-Set them in posts.json file so don't need to tag them as post
+```js
+{
+    "layout": "base.njk",
+    "collection": "posts",
+    "permalink":  "/{%raw%}{{ page.fileSlug | shorten ) }}{%endraw%}/index.html"
+}
+  ```
+
 
 ## Registering your own collection
 
@@ -35,7 +44,7 @@ So for instance to manually create a collection of all posts tagged as `basics` 
 
 ### Why manually register a collection?
 
-In the case of the code above, we likely wouldn't need to because Eleventy will automatically create the `basics` collections for us. But what if we wanted to collect together content based on various tags - the [Eleventy docs page on collections](https://www.11ty.dev/docs/collections/) has a good example:
+In the case of the code above, we likely wouldn't need to because Eleventy will automatically create the `basics` collection for us based on the tag name. But what if we wanted to collect together content based on various tags - the [Eleventy docs page on collections](https://www.11ty.dev/docs/collections/) has a good example:
 
 ```js
 eleventyConfig.addCollection("myTravelPostsWithPhotos", function(collectionApi) {

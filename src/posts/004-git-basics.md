@@ -2,6 +2,11 @@
 title: Git basics
 tags: 
  - basics
+furtherReading:
+ - linkTitle: Github's Git Handbook
+   linkUrl: https://guides.github.com/introduction/git-handbook/ 
+ - linkTitle: Using git from within VS code
+   linkUrl: https://code.visualstudio.com/docs/editor/versioncontrol 
 ---
 
 If you haven't used git and Github much before then you might feel a bit lost at step one of many tutorials which assume you know the basics.
@@ -101,4 +106,14 @@ You can choose to save your Github repo as a 'template'. Then, on it's repo page
 ![Github Use This Template button](https://p67.p3.n0.cdn.getcloudapp.com/items/2Nu0qKKJ/Screenshot%202020-12-13%20at%2008.05.09.png?v=e7138f1b5a78ed1df757f6e33cece9f1)
 
 Doing that will create a version of that repo in your Github account - and you can then clone it to your local machine. This saves you from the steps of having to detach your local repo from the original remote one and attaching your own Github remote instead.
+
+--
+
+## gitignore files
+
+You'll probably notice a file called `.gitignore` in most Eleventy projects. This tells git which files or folders to ignore in terms of tracking any changes or deploying to the remote branch.
+
+They'll amost always include the `node_modules` folder because you don't want that in your remote Github repo. It's huge and you only need it on your local machine for when you're serving and building the site to generate the `public` folder.
+
+Some setups will also include the `public` (or whatever the output folder is called) folder in the `.gitignore` file - so their Github repos won't include the output folder. If they're using Netlify then it's not needed. Netlify runs the build process itself and puts the resulting output folder in its CDN. It is never serving the files directly from your Github repo.
 

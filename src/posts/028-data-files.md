@@ -76,7 +76,7 @@ Check out the filters page for more about how to create them.
 
 To save space I'm outputting them as inline list
 
-### Order alphaebitcally
+### Order alphabetically
 
 Have a look at the filters in the `.eleventy.js` file in the Github repo.
 
@@ -99,15 +99,23 @@ We can pipe in multiple filters in Nunjucks. The `reverse` one is a built-in one
 
 ### Sort by capital using the `capitalAlpha` filter
 
+```js
+{% raw %}{% for item in countriesList.results | capitalAlpha %}{{ item.capital }}, {% endfor %}{{ item.country }}, {% endfor -%}{% endraw %}
+```
+
 {% for item in countriesList.results | capitalAlpha %}{{ item.capital }}, {% endfor %}
 
-### Filter by countries that use the Euro using the `euroCountry` filter and alphabetise with `countryAlpha` filter
+### Filter by countries that use the Euro currency using the `euroCountry` filter and alphabetise with `countryAlpha` filter
+
+```js
+{% raw %}{% for item in countriesList.results | euroCountry | countryAlpha %}{{ item.country }}, {% endfor %}{% endraw %}
+```
 
 {% for item in countriesList.results | euroCountry | countryAlpha %}{{ item.country }}, {% endfor %}
 
 ## Create pages from your data source
 
-If we want to create a separate page for each country then that's easily done too. The process is explained in the APIs and External data page, but in this site we could create a folder called `/src/countries`.
+If we want to create a separate page for each country then that's easily done too. The process is explained in the [APIs and External data page](/apis-external-data), but in this site we could create a folder called `/src/countries`.
 
 Inside that folder create an index.njk file with this Front Matter. 
 

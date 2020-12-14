@@ -18,6 +18,10 @@ body{
 }
 .prose pre, :not(pre) > code[class*="language-"], pre[class*="language-"]{
     background-color: rgba(55,65,81,var(--tw-bg-opacity)) !important;
+    
+}
+.prose pre code{
+    white-space : pre-wrap !important;
 }
 
 
