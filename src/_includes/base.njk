@@ -57,6 +57,18 @@
 </ul>
 </aside>
 {% endif %}
+
+
+
+{% set nextPost = collections.posts | sortorder | getNextCollectionItem(page) %}
+{% if nextPost %}
+<div class="post-nav prose bg-gray-100 rounded p-5 mt-8 mx-auto">
+Next page: >> <a href="{{ nextPost.url }}"> {{ nextPost.data.title }}</a>
+</div>
+{% endif %}
+
+
+
     </main>
     
     <nav class="w-full lg:w-1/4 lg:px-6 leading-normal order-first bg-gray-700 bg-opacity-75 text-white p-6">
@@ -92,8 +104,9 @@
     </div>
      <footer class="w-full flex flex-wrap mx-auto p-4 bg-gray-700 bg-opacity-75 justify-center relative text-gray-100">
      <div class="container text-center text-sm">
-     <p>Built with WordPress*  |  <a href="https://twitter.com/charitybiscuits" _target="_blank">Twitter</a>  |  <a href="https://github.com/badlydrawnben/eleventy-guide" _target="_blank">Github repo for this site</a>  |  Background stripes idea from <a href="https://www.londoncss.dev/" _target="_blank">London CSS</a>  |  *just kidding</p>
+     <p>Built with WordPress*  |  <a href="https://twitter.com/charitybiscuits" _target="_blank">Twitter</a>  |  <a href="https://github.com/badlydrawnben/eleventy-guide" _target="_blank">Github repo for this site</a>  |  Background stripes idea from <a href="https://www.londoncss.dev/" _target="_blank">London CSS</a>  |  *<span class="text-gray-400">just kidding</span></p>
      </div>
+
      </footer>
   </body>
 </html>

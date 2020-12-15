@@ -20,6 +20,10 @@ module.exports = function(eleventyConfig) {
     }
   })
   eleventyConfig.setLibrary("md", markdownLibrary)
+
+  
+// Need to set this so that posts inherit the 'posts' tag from posts.json file and also use tag from the individual .md pages - otherwise if there is  a tag in a .md file Front Matter, it overrides/replaces anything in posts.json 
+  eleventyConfig.setDataDeepMerge(true);
   
  //sortorder filter to sort posts by filename 
   eleventyConfig.addFilter("sortorder", (arr) => {

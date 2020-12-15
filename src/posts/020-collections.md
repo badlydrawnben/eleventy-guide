@@ -1,7 +1,6 @@
 ---
 title: Collections
-tags: 
- - functionality
+tags: functionality
 furtherReading:
  - linkTitle: The official 11ty docs on Collections
    linkUrl: https://www.11ty.dev/docs/collections/ 
@@ -17,7 +16,7 @@ Eleventy has a function for registering collections in the `.eleventy.js` file, 
 
 So this site for example is a nice and simple one. Each of these pages is a 'post' and in the FrontMatter I'm tagging each one to denote which category it belongs to (in the menu - `basics`, `functionality` and `extending`).
 
-I don't need to register any of these collections in the `.eleventy.js` file because they are tags. And I don't need to use the tag of `posts` or register a `posts` collection manually (see next section) because the Data Template file:  `/posts/posts.json` folder is adding all of them to the `posts` collection:
+I don't need to register any of these collections in the `.eleventy.js` file because they are tags. And I don't need to use the tag of `posts` or register a `posts` collection manually because the [Data Template file](/directory-data-files):  `/posts/posts.json` is adding all of them to the `posts` collection:
 
 ```js
 {
