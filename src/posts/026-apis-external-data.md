@@ -174,7 +174,7 @@ Now that we've got our basic loop and we know how to reference the data inside E
 
 Normally you'd associate pagination with determining how many blog posts to show on each page, but the Eleventy pagination system can also be used to take our data set and split it up into individual pages.
 
-Inside our `films` directory let's create a new file called `index.njk`. This is an example of a [Template Directory Data file](/directory-data-files)
+Let's make a  `films` directory and inside it create a new file called `index.njk`. This is an example of a [Template Directory Data file](/directory-data-files)
 
 The FrontMatter for it will look like this:
 

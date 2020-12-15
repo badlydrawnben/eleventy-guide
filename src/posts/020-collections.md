@@ -16,16 +16,16 @@ Eleventy has a function for registering collections in the `.eleventy.js` file, 
 
 So this site for example is a nice and simple one. Each of these pages is a 'post' and in the FrontMatter I'm tagging each one to denote which category it belongs to (in the menu - `basics`, `functionality` and `extending`).
 
-I don't need to register any of these collections in the `.eleventy.js` file because they are tags. And I don't need to use the tag of `posts` or register a `posts` collection manually because the [Data Template file](/directory-data-files):  `/posts/posts.json` is adding all of them to the `posts` collection:
+I don't need to register any of these collections in the `.eleventy.js` file because they are tags. And I don't need to use the tag of `posts` or register a `posts` collection manually because the [Data Template file](/directory-data-files):  `/posts/posts.json` is adding the `posts` tag to all of them:
 
 ```js
 {
     "layout": "base.njk",
-    "collection": "posts",
+    "tags": "posts",
     "permalink":  "/{%raw%}{{ page.fileSlug | shorten ) }}{%endraw%}/index.html"
 }
   ```
-
+Note: It's important to understand the data merging and cascade features in Eleventy if you are declaring tags in the Data Template file and in each individual post as well. See the [Directory Data Files](/directory-data-files) page for more on this.
 
 ## Registering your own collection
 
