@@ -19,7 +19,7 @@ furtherReading:
 ## Fun with JAM and Eleventy
 Basic JAMstack (**J**avascript **A**PIs & **M**arkdown) sites are fun, quick to build, cheap (in fact often free) to host, they scale well and have few security worries.
 
-[Eleventy](#https://11ty.dev)(11ty) is a popular and simple Static Site Generator (SSG). It's good for beginners because it has a mimimal setup and you don't need to know another library like React or another lanaguage like Ruby. 
+[Eleventy](#https://11ty.dev)(11ty) is a popular and simple Static Site Generator (SSG). It's good for beginners because it has a mimimal setup and you don't need to know another Javascript library like React or another programming language like Ruby. 
 
 [The official Eleventy docs](https://www.11ty.dev/docs/) are good, but I think they do assume some knowledge of how SSGs work (many people seem to migrate to Eleventy from other SSGs like Gatsby) and/or they assume a certain familiarity with Javascript. As a newcomer I found that a lot of the content went 'over my head'. I needed more of an *Idiot's guide to Eleventy* – so I decided to be the idiot to write it.
  
@@ -45,4 +45,4 @@ I'm still experimenting with Eleventy so my portfolio is rather pathetic. But I'
 Feel free to open an issue in the [Github repo](https://github.com/badlydrawnben/eleventy-guide) or create a pull request - that's probably the easiest way of pointing out any errors or asking for clarification if I haven't explained something very well. 
 
 ## Join the community
-You can ask me on [Twitter](https://twitter.com/charitybiscuits) if you're stuck trying to do something really basic. But we're both in trouble if I'm the expert because I'm still a complete novice myself! The Eleventy Discord channel is full of developers, 99.5% of whom are better at Eleventy than me, so that's a good place to go for help. 
+You can ask me on [Twitter](https://twitter.com/charitybiscuits) if you're stuck trying to do something really basic. But we're both in trouble if I'm the expert because I'm still a complete novice myself! The [Eleventy Discord server](https://www.11ty.dev/news/discord/) is full of developers, 99.5% of whom are better at Eleventy than me, so that's a good place to go for help. 

@@ -4,10 +4,13 @@ tags:
  - functionality
 ---
 
-A few - put them in Guthub.
+Official elevnty-img plugin
+How to generate responsive images
 
-More - will take up room, add build time if compressing them? Use third party
+Self host or third-party images
+Github
+Cloudinary
+Netlify Large Media
 
-Official eventy-img plugin - ho wo to that?
+Cropping them to a particular size - easy with Cloudinary. It works well with Netlify CMS - probably the easiest option?
 
-Respionsive images, Cropping them - WW2 site example.
