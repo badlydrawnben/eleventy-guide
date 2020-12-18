@@ -1,5 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const mdIterator = require('markdown-it-for-inline')
+const mdIterator = require('markdown-it-for-inline');
+const path = require("path");
+const Image = require("@11ty/eleventy-img");
 let markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
@@ -24,6 +26,47 @@ module.exports = function(eleventyConfig) {
   
 // Need to set this so that posts inherit the 'posts' tag from posts.json file and also use tag from the individual .md pages - otherwise if there is  a tag in a .md file Front Matter, it overrides/replaces anything in posts.json 
   eleventyConfig.setDataDeepMerge(true);
+
+
+  // eleventy-img config - from https://github.com/11ty/eleventy-img 
+  eleventyConfig.addNunjucksAsyncShortcode("myResponsiveImage", async function(src, alt,  myclass = "responsive-img", loading="lazy") {
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on myResponsiveImage from: ${src}`);
+    }
+
+    let outputFormat = ['jpeg'];
+    let stats = await Image(src, {
+      widths: [380, 640],
+      formats: ['jpeg', 'webp'],
+      urlPath: "/img/",
+      outputDir: "./public/img/",
+      // Use the filename rather than random hash 
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    });
+  
+    let lowestSrc = stats[outputFormat][0];
+    let sizes = "(max-width:420px) 380px, 640px"; // Make sure you customize this!
+    // Iterate over formats and widths
+    return `<picture>
+      ${Object.values(stats).map(imageFormat => {
+        return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+      }).join("\n")}
+        <img
+          src="${lowestSrc.url}"
+          width="${lowestSrc.width}"
+          height="${lowestSrc.height}"
+          alt="${alt}"
+          class="${myclass}"
+          loading="${loading}">
+      </picture>`;
+    });
+  
+   
   
  //sortorder filter to sort posts by filename 
   eleventyConfig.addFilter("sortorder", (arr) => {
@@ -57,6 +100,8 @@ module.exports = function(eleventyConfig) {
  
   eleventyConfig.addPassthroughCopy('./src/css/styles.css');
   eleventyConfig.addPassthroughCopy('./src/img');
+ // eleventyConfig.addPassthroughCopy('./img');
+  //eleventyConfig.addPassthroughCopy('./public/img');
   return {
     dir: {
       input: 'src',

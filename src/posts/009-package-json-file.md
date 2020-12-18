@@ -3,7 +3,7 @@ title: The package.json file
 tags: 
  - basics
 ---
-Make sure you've read the previous post about Node.js and npm first.
+Make sure you've read the previous post about [Node.js and npm](/node-js-basics) first.
 
 In the root of your project folder you'll see a file called `package.json`. This is created automatically when you install npm packages. You'll see that any new ones you install will be added to the Dependencies. In this project for example I have installed the Tailwind Typography and 11ty syntax highlighting packages (the main Tailwind package and assoerted others were already installed as part of the Starter project I am using).
 
@@ -51,10 +51,10 @@ I've added some of my own comments to explain what they are doing.
 
 
 
-
+## to add
 Module.exports
 Promise async
-reqiure
+require
 
 ### The package-lock.json file
 You can ignore this file, you'll never need to touch it or look at it. You'll only ever make changes to the `package.json` file itself.

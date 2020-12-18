@@ -64,6 +64,10 @@ body{
     background-color: var(--primary);
 }
 
+.responsive-img{
+    width: 100%;
+}
+
 footer a{
     border-bottom: 1px dotted #ccc;
 }

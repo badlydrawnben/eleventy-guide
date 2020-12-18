@@ -13,10 +13,12 @@ furtherReading:
 ---
  
 <div class="bg-gray-100 p-3 text-purple-900 border-8 border-purple-800 mb-3">
-<p class="text-center font-semibold"><span class="text-5xl">WARNING</span><br>
-<p class="text-center font-semibold">This website is aimed at people like me who are crap at Javascript and/or haven't used Static Site Generators before. If that's not you then you'll likely find the content to be patronising and oversimplistic!</p></div>    
+<h2 class="text-center font-semibold"><span class="text-4xl">Fun with JAM and Eleventy</span></h2>
+<p class="text-center font-semibold">Is this you:<br>
+Have recently started learning web development?<br>
+More experienced in platforms like WordPress or Squarespace?<br>
+Have heard about the JAMstack and want to find out more? </p></div>    
 
-## Fun with JAM and Eleventy
 Basic JAMstack (**J**avascript **A**PIs & **M**arkdown) sites are fun, quick to build, cheap (in fact often free) to host, they scale well and have few security worries.
 
 [Eleventy](#https://11ty.dev)(11ty) is a popular and simple Static Site Generator (SSG). It's good for beginners because it has a mimimal setup and you don't need to know another Javascript library like React or another programming language like Ruby. 
