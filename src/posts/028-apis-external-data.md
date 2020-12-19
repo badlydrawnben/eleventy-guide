@@ -224,7 +224,7 @@ It's a bit of a mess as I used that site for experimenting with all sorts of oth
 
 I hope this has given just a small glimpse into the possibilities of pulling external data into Eleventy.
 
-In this case it's a really simple API that isn't updated, so once built, the data won't go out of date. If you want to pull in data like the news or weather then you may well want the site to automatically rebuild itself a few times a day. See the bottom of the [Static Site Generators](/intro-ssg) page for more info about that.
+In this case it's a really simple API that isn't ever updated, so once built, the data won't go out of date. If you want to pull in data like the news or weather then you may well want the site to automatically rebuild itself a few times a day. See the bottom of the [Static Site Generators](/intro-ssg) page for more info about that.
 
 
 

@@ -8,7 +8,7 @@ Layouts in Eleventy might otherwise be known as Templates.
 
 The standard practice is to keep them in an `_includes/` folder. Or `_includes/layouts` if you've got lots else in there and you want to keep it organised. You can use your own system, but that's the default place Eleventy will look for them.
 
-You might well need a different template for the homepage, blog post pages, and standard pages. But to keep your code DRY, you don't want to have to repeat and need to maintain all the HTML doctype and `<head>` code. So it's normal to have all that written out once in a `base.njk` layout file (if you're using Nunjucks). 
+You might well need a different template for the homepage, blog post pages, and standard pages. But to keep your code DRY, you don't want to have to repeat all the HTML doctype and `<head>` code in each template. So it's normal to have all that written out once in a `base.njk` layout file (if you're using Nunjucks). 
 
 Note - you don't need to use the same templating language in your layout and in the pages that utilise that layout – you could have a Nunjucks template and use Liquid for the pages that call upon it.
 
@@ -16,7 +16,7 @@ Note - you don't need to use the same templating language in your layout and in 
 
 The layout/template should have a `{ content | safe }` tag inside it. That's where the content of your indvidual file will end up. If you aren't using Nunjucks then see [the docs for the tag you need in other templating languages](https://www.11ty.dev/docs/layouts/#prevent-double-escaping-in-layouts).
 
-See the [Filters](/filters) page to understand what the `| safe` part of the tag means.
+See the [Nunjucks](/nunjucks) and [Filters](/filters) pages to understand what the `| safe` part of the tag means.
 
 ## Front Matter in layout files
 
@@ -26,7 +26,7 @@ As well as the individual pages, your layout file can also contain Front Matter 
 
 As well as having completely independent layout files, you can also 'chain' them together. 
 
-Let's say that you have a `page.njk` layout for your standard pages. For your blog posts maybe you want to use that as wlel but also add some prev/next links so users can easily navigate through the `posts` collection.
+Let's say that you have a `page.njk` layout for your standard pages. For your blog posts maybe you want to use that as well but also add some prev/next links so users can easily navigate through the `posts` collection.
 
 Rather than make a copy of the `page.njk` layout, we could create one called `post.njk` which will essentially be a child of the `page.njk` one.
 
@@ -47,7 +47,9 @@ layout: page.njk
 
 ```
 
-All of that is going to be outputted in the {%raw%}{{ content | safe}}{%endraw%} tag of the `page.njk` layout. You might have a `/posts/posts.json` [directory data file](/directpry-data/files) that sets all the posts to use the `post.njk` layout file.
+All of that is going to be outputted in the `{%raw%}{{ content | safe}}{%endraw%}` tag of the `page.njk` layout, which in turn will probably be inheriting a lot of the structure from `base.njk`. 
+
+You might have a `/posts/posts.json` [directory data file](/directpry-data/files) that sets all the posts to use the `post.njk` layout file. That way you don't need to set the layout in the Front Matter of any of the individual `post` files.
 
 The prev/post collection item links are a built-in Eleventy filter. [See more about the filter](https://www.11ty.dev/docs/filters/collection-items/).
 

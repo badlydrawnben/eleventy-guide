@@ -14,7 +14,7 @@ Collections in Eleventy are a way of bundling content together so that you can l
 
 Eleventy has a function for registering collections in the `.eleventy.js` file, which we'll come to in a minute. But it's clever enough to automatically create collections for you based on tags. 
 
-So this site for example is a nice and simple one. Each of these pages is a 'post' and in the FrontMatter I'm tagging each one to denote which category it belongs to (in the menu - `basics`, `functionality` and `extending`).
+So this site for example is a nice and simple one. Each of these pages is a 'post' and in the FrontMatter I'm tagging each one to denote which category it belongs to (so the nav menu can run them in three separate loops - `basics`, `functionality` and `extending`).
 
 I don't need to register any of these collections in the `.eleventy.js` file because they are tags. And I don't need to use the tag of `posts` or register a `posts` collection manually because the [Data Template file](/directory-data-files):  `/posts/posts.json` is adding the `posts` tag to all of them:
 
@@ -43,7 +43,7 @@ So for instance to manually create a collection of all posts tagged as `basics` 
 
 ### Why manually register a collection?
 
-In the case of the code above, we likely wouldn't need to because Eleventy will automatically create the `basics` collection for us based on the tag name. But what if we wanted to collect together content based on various tags - the [Eleventy docs page on collections](https://www.11ty.dev/docs/collections/) has a good example:
+In the case of the code above, we likely wouldn't need to because Eleventy will automatically create the `basics` collection for us based on the tag name. But what if we wanted to collect together content based on various tags? - the [Eleventy docs page on collections](https://www.11ty.dev/docs/collections/) has a good example:
 
 ```js
 eleventyConfig.addCollection("myTravelPostsWithPhotos", function(collectionApi) {
@@ -51,8 +51,6 @@ eleventyConfig.addCollection("myTravelPostsWithPhotos", function(collectionApi) 
   });
 ```  
 Here we're creating a collection called `myTravelPostswithPhotos` which contains content which has been tagged with all three of those tags.
-
-Collecting content from a certain location, or a certain type of file
 
 Have a look at the Eleventy docs page mentioned above. At the bottom of that page you'll see some more examples of creating collections based on 
 The type of file:
@@ -73,7 +71,7 @@ The type of file:
 
   ## Sorting collections
 
-  The main purpose of using a collection is that you can loop through it somehow and present it on your site. As a list of posts for example. The default sorting mechanism Eleventy uses will be on the date the file was created (or you can override that by adding a date in your FrontMatter).
+  The main purpose of using a collection is that you can loop through it somehow and present it on your site – ss a list of posts for example. The default sorting mechanism Eleventy uses will be on the date the file was created (or you can override that by adding a date in your FrontMatter).
 
   Often you will want to create your own sorting system. You might want content ordered alphabetically, or based upon filename or an `order` field in your Front Matter.
 

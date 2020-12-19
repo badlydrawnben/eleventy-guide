@@ -92,5 +92,4 @@ Then if you look in your console you'll see that it prints them out:
   }
 ]
 ```
-
-
+You can see more example od simple filters in the [Data files](/data-files) page.

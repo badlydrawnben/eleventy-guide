@@ -8,7 +8,7 @@ You don't need to create separate files for each item of content. Whilst that ma
 
 In Eleventy we can pull in data in various formats from within the `_data` folder. If it's a simple json file then it will do it automatically based on the file name.
 
-So for example in my `_data` folder there's a file called `countries.json`. You can see it in the github repo here. It's a straightforward json file with information about the member countries of the European Union.
+So for example in my `_data` folder there's a file called `countries.json`. You can see it in the [Github repo here](https://github.com/badlydrawnben/eleventy-guide/blob/master/src/_data/countriesList.json). It's a straightforward json file with information about the member countries of the European Union.
 
 Here's a snippet:
 ```json
@@ -40,7 +40,7 @@ Here's a snippet:
   ETC
   ```
 
-If I want to access the data and loop through it, it's already there in Eleventy called `countriesList` (i.e. it's the name of the json file).
+If I want to access the data and loop through it, it's automatically available in Eleventy called `countriesList` (i.e. it's the name of the json file).
 
 Everything is nested in an array called `results` and the name of the country is called `country`.
 
@@ -72,9 +72,9 @@ templateEngineOverride: njk,md
 ---
 ```
 
-Check out the filters page for more about how to create them.
+Check out the [Filters](/filters) page for more about how to create them.
 
-To save space I'm outputting them as inline list
+To save space I'm outputting them as inline list.
 
 ### Order alphabetically
 

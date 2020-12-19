@@ -21,7 +21,7 @@ So in many Starter Projects it's common to see a `/posts` folder with markdown p
   }
 ```
 
-You can use this even if the folder is otherwise empty. See the Star Wars example in the [API data](/apis-external-data) page. There's nothing else in the `/films` directory in the `/src` folder, but the Directory Data File is telling Eleventy what to do with each film page when it builds it. 
+You can use this even if the folder is otherwise empty. See the Star Wars example in the [API data](/apis-external-data) page. There's nothing else in the `/src/films` folder, but the Directory Data File is telling Eleventy what to do with each film page when it builds it. 
 
 ## Merging vs overriding data
 

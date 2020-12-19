@@ -36,7 +36,7 @@ Basic JAMstack (**J**avascript **A**PIs & **M**arkdown) sites are fun, quick to 
 ## How to get started?
 There are plenty '*learning Eleventy by following along as we build a site from scratch*' tutorials and videos that will show you how to install and set up an Eleventy site from a blank folder. Whilst I think these are useful, for me personally I found that I learned more and found it less frustrating when I cloned one or two of the [starter projects listed in the Eleventy docs](https://www.11ty.dev/docs/starter/) and tinkered around with them. 
 
-See my [Starter projects](/starter-projects) page for some suggestions for newbie-friendly projects amongst the long list on the Eleventy site.
+See the [Starter projects](/starter-projects) page for some suggestions for newbie-friendly projects amongst the long list on the Eleventy site.
 
 This site is intended as the 'missing manual' for beginners – which you can come back and refer to when you get stuck or confused by following other tutorials or looking at the code in other Eleventy projects.
 
