@@ -20,7 +20,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 ```
 
-If you are copying and pasting config functionality code (more about that below) then make sure you are also copying across any of the module requirements at the top of the file as well. (They sometimes use `var` instead of `const` but it's essentially the same thing)
+If you are copying and pasting config functionality code (more about that below) then make sure you are also copying across any of the module requirements as well. (They sometimes use `var` instead of `const` but it's essentially the same thing).
 
 ## The parameter name
 
@@ -43,6 +43,8 @@ config.addFilter("min", (...numbers) => {
 ```  
 
 then make sure that you change that first bit to `eleventyConfig.` (if your project is using the default setup).
+
+**You should only have one `module.exports = function(eleventyConfig)` line in your config file. If you're copying and pasting code it's easy to also copy across another of these module.exports lines with it – and that will break your site.**
 
 ## Adding Passthrough files
 One of the other required elements in the `.eleventy.js` file is the `addPassThroughCopy` function.

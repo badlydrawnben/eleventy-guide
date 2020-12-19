@@ -25,13 +25,9 @@ But it also lets you easily loop through content, to filter/sanitise the output,
 
 Here's what I've figured out so far:
 
-## Includes
-
-{%raw%}{% extends "base.njk" %}{%endraw%} See page about templates
-
 ## Built-in filters
 
-{%raw%}{{ content | safe }}{%endraw%}
+`{%raw%}{{ content | safe }}{%endraw%}`
 
 What is that `| safe` bit? 
 With Nunjucks you use the pipe to apply a filter to whatever it is that the Nunjucks is outputting.
@@ -42,7 +38,7 @@ Some of the the other built-in filters you might use are `reverse`, `trim`, `url
 
 ## Custom filters
 
-Check out the Filters and Data Files pages on this site for details on how to create your own Nunjucks filters.  Whilst Nunjucks has a built-in `sort` filter, it seems like most people build a custom one.
+Check out the [Filters](/filters) and [Data Files](/data-files) pages on this site for details on how to create your own Nunjucks filters.  Whilst Nunjucks has a built-in `sort` filter, it seems like most people build a custom one.
 
 ## Loops
 
@@ -90,6 +86,16 @@ Or [this section in the 11ty docs](https://www.11ty.dev/docs/collections/#exampl
 If you look at the `base.njk` file [in this site's Github repo](https://github.com/badlydrawnben/eleventy-guide/blob/master/src/_includes/base.njk) you'll see that I'm implementing a setup from my WordPress SEO workflow – so on the homepage the site title is output as the `<h1>` tag, whereas on all the other pages the `<h1>` is the page title. That's all done with if/else Nunjucks statements. I'm sure the code could be made more efficient, but it works.
 
 ## Nunjucks in code blocks
-In Eleventy markdown files, Nunjucks code seems to be executed even though it's inside a code block. That makes actually printing NUnjucks code onscreen a bit harder. See the Markdown page in this site for the best solution that I've come across.
+In Eleventy markdown files, Nunjucks code seems to be executed even though it's inside a code block. That makes actually printing NUnjucks code onscreen a bit harder. See the [Markdown page](/markdown) in this site for the best solution that I've come across.
 
-Square bracket notation for collections.variable
+## Using variables in Eleventy collection names
+
+This bit is very niche, but it's one of those problems that had me stumped for hours. 
+
+If you're trying to loop through some Eleventy collections and need to pass in the name of the collection as a variable, then using the square bracket notation worked when nothing else did.
+
+```js
+{%raw%}{% for post in collections[item.id] | sortorder %}{%endraw%}
+```
+
+That's from my `base.njk` file where `item.id` is a variable that contains the name of the `tags` that it is looping through. So try out that square bracket variation if the other syntax isn't working for you.

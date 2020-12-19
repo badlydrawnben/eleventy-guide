@@ -35,7 +35,7 @@ But this will:
 
 
 
-Note that with Eleventy you're not obliged to use Markdown at all if you don't want to. If you want to write your pages in HTML or Nunjucks or Liquid or Pug, amongst other templeate languages – then do whatever feels most comfortable.
+Note that with Eleventy you're not obliged to use Markdown at all if you don't want to. If you want to write your pages in HTML or Nunjucks or Liquid or Pug, amongst other template languages – then do whatever feels most comfortable.
 
 (Which I guess means that you're making a JAH, JAN, JAL or JAPstack site)
 

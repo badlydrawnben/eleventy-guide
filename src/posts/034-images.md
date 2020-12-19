@@ -2,17 +2,23 @@
 title: Images
 tags: 
  - functionality
-templateEngineOverride: njk,md  
+templateEngineOverride: njk,md
+furtherReading:
+ - linkTitle: Responsive image breakpoint generator
+   linkUrl: https://www.responsivebreakpoints.com/e/
+ - linkTitle: Tutorial on how srcset and sizes work
+   linkUrl: https://cloudfour.com/thinks/responsive-images-101-part-4-srcset-width-descriptors/
 ---
-I have to admint that images are one of the things that WordPress does so much easier! You can easily define your own image sizes and crop ratios, upload an image, and WP automatically generates the differently sized versions for you and adds the `srcset` versions to the `<img>` tab.
+
+I have to admit that images are one of the things that WordPress does so much easier! You can easily define your own image sizes and crop ratios, upload an image, and WP automatically generates the differently sized versions for you and adds the `srcset` versions to the `<img>` tab.
 
 Mind you, it creates *all* the sizes and crops of *every* image, regardless of whether you only wanted to use one of them – so your media library can get pretty heavy pretty quickly!
 
-You can add images in a folder in your project and link to them as usual – and you're good to go. They can be uploaded to the Github repo (provided you make sure you `addPassThroughCopy` them as described in the [troubleshooting the config file](/troubleshooting-config) page.
+When it comes to Eleventy, you can add images in a folder in your project and link to them as usual – and you're good to go. They can be uploaded to the Github repo (provided you make sure you `addPassThroughCopy` them as described in the [troubleshooting the config file](/troubleshooting-config) page.
  
 If it's just a little logo file then you don't need to do much more.
 
-But a github repo isn't really designed to host lots of media files, and if you're planning to use a lot of images in your site then you probably want to make them responsive using something like `srcset` and to make sure they're optimised and served in the best-possible format.
+But a Github repo isn't really designed to host lots of media files, and if you're planning to use a lot of images in your site then you probably want to make them responsive using something like `srcset` and to make sure they're optimised and served in the best-possible format.
 
 
 There are two routes you can go down:
@@ -20,9 +26,9 @@ There are two routes you can go down:
 2. Use a third-party service like Cloudinary to do all the hosting and heavy-lifting for you.
 
 ## The official eleventy-img plugin
-There's a few Eleventy image plugins available, but let's look at [Zach's eleventy-img](https://github.com/11ty/eleventy-img) one.
+There's a few Eleventy image plugins available, but let's look at [the official eleventy-img](https://www.11ty.dev/docs/plugins/image/) one.
 
-I haven't used this one before, and to be honest it has taken me ages to get it to work. I'm sure it's me, but for what it's worth – this is the code that works for me. I've taken the example code for the `myResponsiveImage` shortcode and tweaked it to get it working in my setup. 
+I haven't used this one before, and to be honest it has taken me ages to get it to work. I'm sure it's me, but for what it's worth – this is the code that worked. I've taken the example code for the `myResponsiveImage` shortcode in the Github repo version and tweaked it to get it working in my setup. 
 
 Plus I have added in another couple of parameters to the shortcode for image class and lazy loading.
 

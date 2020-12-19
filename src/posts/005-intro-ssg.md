@@ -6,7 +6,7 @@ tags:
 
 I hope you're already convinced that although JAMstack sites aren't the best tool for certain types of web project, they are perfect for others – including some that we might traditionally build with WordPress.
 
-JAMstack sites are often cheaper, more secure, more scalable and arguably much more fun to build than their MAMPstack counterparts.
+JAMstack sites are often cheaper, more secure, more scalable and arguably much more fun to build than their LAMPstack counterparts.
 
 You don't need a Static Site Generator (SSG) to create and deploy a JAMstack site, you could just handwrite the HTML and upload it to Github. But if it's more than a couple of pages in size then a SSG is often the way to go.
 
@@ -19,7 +19,9 @@ This image is taken from [Netlify's page about how SSGs work](https://www.netlif
 
 Let's use Netlify as an example as that's the host that many people use. A common workflow is to use Github as a repo for your site files. You can add a site to your Netlify account and connect it to a Github repo. 
 
-The `netlify.toml` file that you see in many Eleventy projects is there to tell Netlify which folder contains the built/compiled version of the site. It's often called `dist` or `public`. Netlify uses the other files in the source directory and elsewhere to build the site but they're never served to the outside world.
+The `netlify.toml` file that you see in many Eleventy projects is there to tell Netlify which folder will contain the all the static files once the site has been built. It's often called `dist` or `public` or `_site`. 
+
+Netlify uses the other files in the source directory and elsewhere to build the site and it deploys the resulting static files on its CDN. It doesn't use the contents of the `dist` folder in your Github account, it generates its own. You don't even need to have a `dist` folder in your Githb repo at all.
 
 Let's take a look at the [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog) on github as an example. Because the site hasn't been built/compiled yet, all you see is all of the source files.
 
@@ -48,7 +50,7 @@ And the `netlify.toml` file is telling Netlify the name of the folder to find al
   command = "DEBUG=* eleventy"
 ```
 
-Whenever the contents of the `_site` folder in the Github repo changes, Netlify will rebuild and redeploy the site automatically.
+Whenever a push is made to the Github repo, Netlify will rebuild and redeploy the site automatically.
 
 ### The 'static' part of Static Site Generators
 
@@ -57,8 +59,6 @@ Once the site is 'built' and the static HTML, CSS, image etc files are created, 
 So let's say you have a function that picks from a random post, or pulls in data from an API. Once the site is rebuilt, that data is baked into it. So refreshing the page in your browser for example won't display a different random post. 
 
 In a WordPress site the random post is shown dynamically with a bit of PHP interacting with the MYSQL database. But the server in the case of the SSG is just on your computer. It requests a random post in order to build the site, **but it will only choose a different one when the site is rebuilt**.
-
-COuld have some client-side random effect thing.
 
 ### Making your Static Site seem a bit less static
 

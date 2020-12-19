@@ -12,12 +12,19 @@ furtherReading:
 
 ---
  
-<div class="bg-gray-100 p-3 text-purple-900 border-8 border-purple-800 mb-3">
-<h2 class="text-center font-semibold"><span class="text-4xl">Fun with JAM and Eleventy</span></h2>
-<p class="text-center font-semibold">Is this you:<br>
-Have recently started learning web development?<br>
-More experienced in platforms like WordPress or Squarespace?<br>
-Have heard about the JAMstack and want to find out more? </p></div>    
+<div class="bg-gray-100 p-2 text-purple-900 border-0 border-purple-800 mb-3">
+<h2 class="text-center font-semibold pb-4"><span class="text-3xl">Learning the JAMstack with Eleventy</span></h2></div> 
+
+<div class="text-lg p-4 text-center">
+
+**This website is aimed at people who have:**
+
+ Recently started learning web development<br><span class="text-sm text-gray-600 leading-tight font-light">*or*</span>
+ Been using platforms like WordPress or Squarespace<br><span class="text-sm text-gray-600 leading-tight font-light">*or*</span>
+ Heard about the JAMstack and want to find out more
+</div>
+
+---   
 
 Basic JAMstack (**J**avascript **A**PIs & **M**arkdown) sites are fun, quick to build, cheap (in fact often free) to host, they scale well and have few security worries.
 
@@ -37,9 +44,9 @@ This site is intended as the 'missing manual' for beginners – which you can co
 One of the things I like about Eleventy and Netlify (and Tailwind too) is that you can have fun making experimental and niche websites really easily. They have no hosting cost and they're no-maintenance. You can make one in an hour and it'll live safely and securely on the internet without ever needing any software or server updates.
 
 ## About me
-I'm coming to the JAMstack and SSG world from a background in WordPress. I don't have any programming qualifications/training and I'm self-taught in the fairly basic PHP and jQuery that you need to build straightforward 'brochure' style WordPress sites. I'm good with HTML and CSS, albeit that I tend to lean on Bootstrap quite a lot.
+I'm coming to the JAMstack and SSG world from a background in WordPress. I don't have any programming qualifications/training and I'm self-taught in the fairly basic HTML, CSS, PHP and jQuery that you can build a WordPress site with.
 
-I like WordPress and make a living from it. But it stopped being *fun* a long time ago. I wanted to get back to the basics of writing code and building sites for the pleasure of it. 
+I like WordPress, but it stopped being *fun* a long time ago. I wanted to get back to the basics of writing code and building sites for the pleasure of it. 
 
 I'm still experimenting with Eleventy so my portfolio is rather pathetic. But I've made quirky sites like https://badlydrawnben.com and throwaway ones *with* and *for* my kids – like this one about [World War 2 aeroplanes](https://ww2planes.netlify.app). 
 

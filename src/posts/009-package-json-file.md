@@ -37,7 +37,7 @@ npm run start
 
 Whilst *start* and *serve* are commonly used, the naming convention of these scripts is down to personal preference and some projects may need extra custom scripts as well.
 
-**So if you're starting from an existing starter project it's important to have a look in the package.json file to check what the serve and build shorcuts are for that project.**
+**So if you're starting from an existing starter project it's important to have a look in the package.json file to check what the serve and build shortcuts are for that project.**
 
 These are the scripts for the starter project I used for this site for example:
 ``` json

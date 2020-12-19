@@ -15,8 +15,8 @@ module.exports = function(eleventyConfig) {
     linkify: true
   }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
     const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
-    
-    if (href && (!href.includes('localhost') && !href.startsWith('/') && !href.startsWith('#'))) {
+    // If markdown link isn't an internal or anchor one, make it open in a new tab
+    if (href && !href.startsWith('/') && !href.startsWith('#')) {
       tokens[idx].attrPush([ 'target', '_blank' ])
       tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ])
     }

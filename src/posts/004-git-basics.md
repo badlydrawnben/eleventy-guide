@@ -30,7 +30,7 @@ When you're developing your site you can change bit by bit and 'commit' each one
 
 ### Git push
 
-'Pushing' your changes means that when you've amended the code in your local version and you're ready to send it to the rmeote version to update that one accordingly, you 'push' your changes (i.e. all your commits since the last 'push') to the remote version. 
+'Pushing' your changes means that when you've amended the code in your local version and you're ready to send it to the remote version to update that one accordingly, you 'push' your changes (i.e. all your commits since the last 'push') to the remote version. 
 
 ### Git pull
 
