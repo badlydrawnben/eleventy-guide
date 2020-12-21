@@ -12,8 +12,8 @@ furtherReading:
 
 ---
  
-<div class="bg-gray-100 p-2 text-purple-900 border-0 border-purple-800 mb-3">
-<h2 class="text-center font-semibold pb-4"><span class="text-3xl">Learning the JAMstack with Eleventy</span></h2></div> 
+<div class="bg-gray-100 py-1 border-0 border-purple-800 mb-3">
+<h2 class="text-center font-semibold pb-2"><span class="text-3xl">Learning the JAMstack with Eleventy</span></h2>
 
 <div class="text-lg p-4 text-center">
 
@@ -22,6 +22,7 @@ furtherReading:
  Recently started learning web development<br><span class="text-sm text-gray-600 leading-tight font-light">*or*</span>
  Been using platforms like WordPress or Squarespace<br><span class="text-sm text-gray-600 leading-tight font-light">*or*</span>
  Heard about the JAMstack and want to find out more
+</div>
 </div>
 
 ---   
